@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaUserShield } from 'react-icons/fa'; // Importing an icon for the admin
+import { FaUserShield, FaAddressBook, FaBlog } from 'react-icons/fa'; // Importing icons
 
 const AdminSidebar = () => {
   return (
     <div className="w-80 h-[100vh] bg-navy text-white p-6 shadow-lg">
-      <div className="flex items-center mb-8">
-        <FaUserShield className="text-yellow-300 text-3xl mr-3" /> {/* Admin Icon */}
-        <h1 className="text-2xl font-bold">Admin Portal</h1>
+      <FaUserShield className="text-yellow-300 text-9xl text-center ml-10" /> {/* Admin Icon */}
+      <div className="flex items-center my-8">
+        <h1 className="text-4xl font-bold">Admin Portal</h1>
       </div>
       <nav>
         <ul>
@@ -16,7 +16,7 @@ const AdminSidebar = () => {
               to="/contact-details"
               className="text-lg hover:text-yellow-300 transition-colors duration-300 flex items-center"
             >
-              <span className="material-icons mr-2">contact_mail</span>
+              <FaAddressBook className="mr-2" /> {/* Contact Details Icon */}
               Contact Details
             </Link>
           </li>
@@ -25,7 +25,7 @@ const AdminSidebar = () => {
               to="/blog-form"
               className="text-lg hover:text-yellow-300 transition-colors duration-300 flex items-center"
             >
-              <span className="material-icons mr-2">edit</span>
+              <FaBlog className="mr-2" /> {/* Blog Form Icon */}
               Blog Form
             </Link>
           </li>
