@@ -1,26 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Correct import
 
 const AdminDashboard = () => {
-  const [user, setUser] = useState(null);
-  const history = useHistory();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-
-    if (!token) {
-      history.push('/login');
-    } else {
-      // Add logic to verify token if needed
-      setUser({ username: 'admin' }); // Mock user data, replace with actual data if needed
-    }
-  }, [history]);
+  const handleClick = () => {
+    navigate('/some-other-path'); // Example navigation
+  };
 
   return (
-    <div className="p-8">
-      <h2 className="text-3xl font-bold">Admin Dashboard</h2>
-      <p>Welcome, {user?.username}</p>
-      {/* Add your dashboard components here */}
+    <div>
+      <h1 className="text-2xl font-bold">Admin Dashboard</h1>
+      <button onClick={handleClick} className="bg-blue-500 text-white px-4 py-2 rounded">
+        Go to Another Page
+      </button>
     </div>
   );
 };
