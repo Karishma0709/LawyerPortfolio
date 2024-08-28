@@ -6,6 +6,7 @@ import ContactForm from "../components/content/ContactUs";
 import About from "../components/About";
 import PracticeArea from "../components/PracticeArea";
 import Blog from "../components/Blog";
+import Footer from "../components/footer/Footer";
 
 
 export const router = createBrowserRouter([
@@ -33,7 +34,10 @@ export const router = createBrowserRouter([
                 path: "blog",
                 element: <Blog/>
             },
-            
+            {
+                path: "footer",
+                element: <Footer/>
+            },
            
         ]
     }
