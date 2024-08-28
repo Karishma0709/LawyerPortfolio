@@ -49,27 +49,27 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="team-section bg-gray-100 py-20 px-8">
+    <section className="team-section bg-gray-100 py-10 px-4">
       <div className="max-w-screen-lg mx-auto text-center">
-        <h2 className="text-4xl font-bold text-yellow-500 mb-12">
+        <h2 className="text-4xl font-bold text-yellow-500 mb-8">
           Meet Our Team
         </h2>
-        <div className="flex justify-center gap-10">
+        <div className="flex flex-wrap justify-center gap-8">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className={`team-member bg-white rounded-lg shadow-lg p-6 w-full sm:w-1/2 md:w-1/3 ${styles.card}`}
+              className={`team-member bg-white rounded-lg shadow-lg p-6 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 ${styles.card}`}
             >
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-48 object-cover rounded-t-lg"
+                className="w-full h-48 object-cover rounded-t-lg mb-4"
               />
-              <h3 className="text-2xl font-semibold mt-4 text-gray-800">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                 {member.name}
               </h3>
-              <p className="text-xl text-yellow-500">{member.position}</p>
-              <p className="text-gray-700 mt-2">{member.bio}</p>
+              <p className="text-xl text-yellow-500 mb-2">{member.position}</p>
+              <p className="text-gray-700">{member.bio}</p>
             </div>
           ))}
         </div>

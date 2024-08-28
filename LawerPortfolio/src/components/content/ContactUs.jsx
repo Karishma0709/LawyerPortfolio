@@ -49,8 +49,8 @@ const ContactUs = () => {
   return (
     <div className="bg-navy text-white py-16 px-8">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-extrabold text-center mb-10 text-yellow-300">
-          Contact Us
+        <h2 className="text-4xl font-extrabold text-center mb-10 text-white">
+          Conta<span className="text-yellow-500">ct Us</span>
         </h2>
         <div className="flex flex-wrap justify-between">
           {/* Contact Form */}
