@@ -32,8 +32,8 @@ const storage = multer.diskStorage({
   }
 })
 
-require('../models/UnpaidProduct')
-const unpdfSchema=mongoose.model("unpaidpdf")
+// require('../models/UnpaidProduct')
+// const unpdfSchema=mongoose.model("unpaidpdf")
 const upload = multer({ storage: storage }) 
 
 
