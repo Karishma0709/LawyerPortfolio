@@ -16,7 +16,7 @@ const AdminSidebar = () => {
             </Link>
           </li>
           <li className="mb-4">
-            <Link to="/blogs" className="text-lg hover:text-yellow-300 transition-colors duration-300 flex items-center">
+            <Link to="/blog-form" className="text-lg hover:text-yellow-300 transition-colors duration-300 flex items-center">
               <FaBlog className="mr-2" />
               Blog Form
             </Link>
