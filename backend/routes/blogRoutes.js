@@ -1,5 +1,7 @@
 const express = require('express');
 const multer = require('multer');
+const { default: mongoose } = require('mongoose');
+
 // const { createBlogPost, getBlogPosts } = require('../controller/blogController');
 
 const router = express.Router();
@@ -33,7 +35,7 @@ const storage = multer.diskStorage({
 })
 
 require('../model/blog')
-const unpdfSchema=mongoose.model("Bloginfo")
+const imageSchema=mongoose.model("Bloginfo")
 const upload = multer({ storage: storage }) 
 
 
@@ -42,7 +44,7 @@ router.post("/blogs",upload.single("file"),async(req,res)=>{
   const title=req.body.title;
   const fileName=req.file.filename
   try{
-await unpdfSchema.create({title:title,pdf:fileName})
+await imageSchema.create({title:title,pdf:fileName})
 res.send({Status:"ok"})
   }catch(error){
 res.json({status:error})
@@ -50,7 +52,7 @@ res.json({status:error})
 })
 
 router.get('/blogs',async(req,res)=>{
-  try{unpdfSchema.find({}).then((data)=>{
+  try{imageSchema.find({}).then((data)=>{
 res.send({status:"ok",data:data})
   })}catch(error){
   }

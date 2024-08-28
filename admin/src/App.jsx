@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AdminSidebar from './components/AdminSidebar';
-import ContactDetails from './components/ContactDetails';
-import BlogForm from './components/BlogForm';
-import LoginPage from './LoginPage';
-import AdminDashboard from './AdminDashboard';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AdminSidebar from "./components/AdminSidebar";
+import ContactDetails from "./components/ContactDetails";
+import BlogForm from "./components/BlogForm";
+import LoginPage from "./LoginPage";
+import AdminDashboard from "./AdminDashboard";
+import "./App.css";
 
 const AdminLayout = () => (
   <div className="flex">
@@ -25,7 +25,8 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/" element={<AdminLayout />} />
+        {/* Notice the change here: path="/" -> path="/*" */}
+        <Route path="/*" element={<AdminLayout />} />
       </Routes>
     </Router>
   );

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaUserShield, FaAddressBook, FaBlog } from 'react-icons/fa';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaUserShield, FaAddressBook, FaBlog } from "react-icons/fa";
 
 const AdminSidebar = () => {
   return (
@@ -10,13 +10,19 @@ const AdminSidebar = () => {
       <nav>
         <ul>
           <li className="mb-4">
-            <Link to="/contact-details" className="text-lg hover:text-yellow-300 transition-colors duration-300 flex items-center">
+            <Link
+              to="/contact-details"
+              className="text-lg hover:text-yellow-300 transition-colors duration-300 flex items-center"
+            >
               <FaAddressBook className="mr-2" />
               Contact Details
             </Link>
           </li>
           <li className="mb-4">
-            <Link to="/blog-form" className="text-lg hover:text-yellow-300 transition-colors duration-300 flex items-center">
+            <Link
+              to="/blog-form"
+              className="text-lg hover:text-yellow-300 transition-colors duration-300 flex items-center"
+            >
               <FaBlog className="mr-2" />
               Blog Form
             </Link>
