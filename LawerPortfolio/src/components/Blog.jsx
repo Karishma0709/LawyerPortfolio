@@ -37,16 +37,18 @@ const Blog = () => {
     <div className="p-6">
       <h2 className="text-xl font-bold mb-4">Blog Posts</h2>
       <div className="space-y-4">
-        {allImage.map((blog) => (
-          <div key={blog._id} className="border border-navy p-4 rounded">
-            <h3 className="text-lg font-bold">{data.title}</h3>
-            <img
-              src={data.pfd}
-              alt={data.title}
-              className="mt-2 w-full rounded"
-            />
-          </div>
-        ))}
+        {allImage == null
+          ? " "
+          : allImage.map((blog) => (
+              <div key={data._id} className="border border-navy p-4 rounded">
+                <h3 className="text-lg font-bold">{data.title}</h3>
+                <img
+                  src={data.pfd}
+                  alt={data.title}
+                  className="mt-2 w-full rounded"
+                />
+              </div>
+            ))}
       </div>
     </div>
   );
