@@ -7,6 +7,7 @@ const ContactUs = () => {
     lastName: '',
     email: '',
     organization: '',
+    contactNumber: '', // Added contact number field
     message: ''
   });
 
@@ -34,6 +35,7 @@ const ContactUs = () => {
           lastName: '',
           email: '',
           organization: '',
+          contactNumber: '',
           message: ''
         });
       } else {
@@ -47,7 +49,9 @@ const ContactUs = () => {
   return (
     <div className="bg-navy text-white py-16 px-8">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <h2 className="text-4xl font-extrabold text-center mb-10 text-yellow-300">
+          Contact Us
+        </h2>
         <div className="flex flex-wrap justify-between">
           {/* Contact Form */}
           <div className="w-full md:w-1/2 p-4">
@@ -98,6 +102,18 @@ const ContactUs = () => {
                   value={formData.organization}
                   onChange={handleChange}
                   placeholder="Organization"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm font-semibold mb-2" htmlFor="contactNumber">Contact Number</label>
+                <input 
+                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" 
+                  id="contactNumber" 
+                  name="contactNumber" 
+                  type="text" 
+                  value={formData.contactNumber}
+                  onChange={handleChange}
+                  placeholder="Contact Number"
                 />
               </div>
               <div className="mb-4">
