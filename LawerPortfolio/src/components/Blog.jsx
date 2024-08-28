@@ -40,11 +40,11 @@ const Blog = () => {
         {allImage == null
           ? " "
           : allImage.map((blog) => (
-              <div key={data._id} className="border border-navy p-4 rounded">
-                <h3 className="text-lg font-bold">{data.title}</h3>
+              <div key={blog._id} className="border border-navy p-4 rounded">
+                <h3 className="text-lg font-bold">{blog.title}</h3>
                 <img
-                  src={data.pfd}
-                  alt={data.title}
+                  src={`http://localhost:5000/Blogfiles/${blog.pdf}`}
+                  alt={blog.title}
                   className="mt-2 w-full rounded"
                 />
               </div>

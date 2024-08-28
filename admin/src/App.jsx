@@ -11,7 +11,7 @@ const App = () => {
       <div className="flex">
         {/* Sidebar */}
         <AdminSidebar />
-        
+
         {/* Main content area */}
         <main className="flex-1 bg-white p-6">
           <Routes>

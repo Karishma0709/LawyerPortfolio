@@ -15,6 +15,8 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
+app.use('/Blogfiles', express.static('Blogfiles'));
+
 // Routes
 app.use('/api', contactRoutes);
 app.use('/api', blogRoutes);
