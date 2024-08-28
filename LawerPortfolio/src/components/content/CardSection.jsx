@@ -65,7 +65,7 @@ const CardSection = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="flex justify-center flex-col w-[100%]">
         <h2 className="split-color-text mb-2 mt-3">Our Services</h2>
         <p className="text-xl font-bold text-white leading-relaxed mb-7 subtitle-bg mt-7">

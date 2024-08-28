@@ -1,14 +1,4 @@
-body {
-  background: linear-gradient(
-    to right,
-    #eab308 0%,
-    #eab308 50%,
-    hsl(190deg, 30%, 15%) 50%,
-    hsl(190deg, 30%, 15%) 100%
-  );
-  font-family: "Arial", sans-serif;
-  overflow-x: hidden;
-}
+
 
 :root {
   --cards: 4;
