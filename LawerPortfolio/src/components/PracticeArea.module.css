@@ -1,0 +1,23 @@
+.card {
+  /* Optional: Add some styles for the card container */
+}
+
+.cardImage {
+  transition: transform 0.3s ease;
+}
+
+.cardImage:hover {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  /* Optional: Add styles for the card content */
+}
+
+.cardTitle {
+  color: #333; /* Or use your preferred color */
+}
+
+.cardDescription {
+  color: #555; /* Or use your preferred color */
+}

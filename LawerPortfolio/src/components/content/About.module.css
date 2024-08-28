@@ -1,0 +1,14 @@
+.title {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+/* .subtitle {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.content {
+  opacity: 0;
+  transform: translateY(30px);
+} */

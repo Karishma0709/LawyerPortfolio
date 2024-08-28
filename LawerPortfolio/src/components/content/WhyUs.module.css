@@ -1,0 +1,28 @@
+/* WhyUs.module.css */
+
+.section {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(220, 220, 220, 0.8) 100%);
+    padding-top: 3rem; /* Adjusted padding */
+    padding-bottom: 3rem; /* Adjusted padding */
+  }
+  
+  .title {
+    background: linear-gradient(90deg, rgba(250,204,21,1) 0%, rgba(255,193,7,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem; /* Adjusted font size */
+  }
+  
+  .header {
+    font-weight: 700; /* Heavier font weight */
+    color: #333; /* Darker color for readability */
+  }
+  
+  .content {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8; /* Increased line height */
+    text-align: justify;
+  }
+  

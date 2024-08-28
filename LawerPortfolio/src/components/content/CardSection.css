@@ -1,0 +1,204 @@
+body {
+  background: linear-gradient(
+    to right,
+    #eab308 0%,
+    #eab308 50%,
+    hsl(190deg, 30%, 15%) 50%,
+    hsl(190deg, 30%, 15%) 100%
+  );
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --cards: 4;
+  --cardHeight: 87vh;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 4vw;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+#cards {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  gap: var(--cardMargin);
+  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+  margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+  --index: 1;
+}
+#card2 {
+  --index: 2;
+}
+#card3 {
+  --index: 3;
+}
+#card4 {
+  --index: 4;
+}
+
+.split-color-text {
+  font-size: 37px;
+  font-weight: bolder;
+  color: white;
+  background: linear-gradient(
+    to right,
+    hsl(190deg, 30%, 15%) 0%,
+    hsl(190deg, 30%, 15%) 50%,
+    #eab308 50%,
+    #eab308 100%
+  );
+  transform: translate(117%, 50%);
+  width: 30%;
+  padding-block: 8px;
+}
+
+@media (max-width: 700px) {
+  .split-color-text {
+    font-size: 37px;
+    font-weight: bolder;
+    color: white;
+    background: linear-gradient(
+      to right,
+      hsl(190deg, 30%, 15%) 0%,
+      hsl(190deg, 30%, 15%) 50%,
+      #eab308 50%,
+      #eab308 100%
+    );
+    transform: translate(0%, 50%);
+    width: 100%;
+    padding-block: 8px;
+  }
+}
+
+.subtitle-bg {
+  background: linear-gradient(
+    to right,
+    hsl(190deg, 30%, 15%) 0%,
+    hsl(190deg, 30%, 15%) 50%,
+    #eab308 50%,
+    #eab308 100%
+  );
+  transform: translate(117%, 50%);
+  width: 30%;
+  padding-block: 8px;
+}
+@media (max-width: 700px) {
+  .subtitle-bg {
+    background: linear-gradient(
+      to right,
+      hsl(190deg, 30%, 15%) 0%,
+      hsl(190deg, 30%, 15%) 50%,
+      #eab308 50%,
+      #eab308 100%
+    );
+    transform: translate(0%, 50%);
+    width: 100%;
+    padding-block: 8px;
+  }
+}
+
+.card {
+  position: sticky;
+  top: 0;
+  padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1 .card-body {
+  background-image: url("../../assets/services1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#card2 .card-body {
+  background-image: url("../../assets/services2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#card3 .card-body {
+  background-image: url("../../assets/services3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#card4 .card-body {
+  background-image: url("../../assets/services4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main_card {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.card-body {
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  height: var(--cardHeight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+.status {
+  background: linear-gradient(
+    to right,
+    #eab308 0%,
+    #eab208e5 50%,
+    #eab208bb 52%,
+    #eab20810 100%
+  );
+  width: 50%;
+  transform: translate(45%, 50%);
+  padding-block: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .status {
+    background: linear-gradient(
+      to right,
+      #eab308 0%,
+      #eab208e5 50%,
+      #eab208bb 52%,
+      #eab2080a 100%
+    );
+    transform: translate(0%, 50%);
+    padding-block: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

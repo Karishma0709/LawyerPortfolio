@@ -1,0 +1,37 @@
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to left, hsl(190deg, 30%, 15%) 50%, #eab308 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(to left, hsl(190deg, 30%, 15%) 50%, #eab308 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  margin-bottom: 50px;
+  border-left: 3px solid hsl(190deg, 30%, 15%);
+  border-right: 3px solid #eab308;
+}
+
+.partnerCards {
+  width: 220px;
+  height: 280px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.61);
+}
+
+.partnerCards:hover {
+  width: 220px;
+  height: 280px;
+  transform: scale(1.1);
+  transition: 0.8s ease all;
+  box-shadow: 0 0px 7px 0 #eab308;
+}
