@@ -15,7 +15,7 @@ const Blog = () => {
 
   return (
     <div className="p-6 bg-blog">
-      <h2 className="text-3xl font-bold text-white mb-4">Blog Posts</h2>
+      <h2 className="text-4xl font-bold text-white mb-8 text-center">Blog Posts</h2>
       <div className="space-y-4">
         {allImage == null
           ? " "
