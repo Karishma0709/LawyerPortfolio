@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AdminSidebar from './components/AdminSidebar';
 import ContactDetails from './components/ContactDetails';
 import BlogForm from './components/BlogForm';
@@ -11,14 +11,11 @@ const App = () => {
       <div className="flex">
         <AdminSidebar />
         <div className="flex-1 bg-white p-6">
-          <Switch>
-            <Route path="/contact-details" component={ContactDetails} />
-            <Route path="/blog-form" component={BlogForm} />
-            <Route path="/" exact>
-              <h1 className="text-xl font-bold">Welcome to the Admin Dashboard</h1>
-              {/* You can add a home component or content here */}
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/contact-details" element={<ContactDetails />} />
+            <Route path="/blog-form" element={<BlogForm />} />
+            <Route path="/" element={<h1 className="text-xl font-bold">Welcome to the Admin Dashboard</h1>} />
+          </Routes>
         </div>
       </div>
     </Router>

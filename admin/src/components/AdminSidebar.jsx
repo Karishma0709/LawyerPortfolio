@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 const AdminSidebar = () => {
   return (
-    <div className="w-64 h-full bg-navy p-4">
+    <div className="w-80 h-[100vh] bg-navy p-4">
+      <h1>Admin Portal</h1>
       <nav>
         <ul>
           <li className="mb-4">
