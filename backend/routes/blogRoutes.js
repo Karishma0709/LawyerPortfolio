@@ -42,9 +42,10 @@ const upload = multer({ storage: storage })
 router.post("/blogs",upload.single("file"),async(req,res)=>{
   console.log(req.file)
   const title=req.body.title;
+  const description=req.body.description;
   const fileName=req.file.filename
   try{
-await imageSchema.create({title:title,pdf:fileName})
+await imageSchema.create({title:title,pdf:fileName,description:description})
 res.send({Status:"ok"})
   }catch(error){
 res.json({status:error})

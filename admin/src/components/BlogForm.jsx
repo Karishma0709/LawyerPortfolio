@@ -11,6 +11,7 @@ const BlogForm = () => {
     e.preventDefault();
     const formData = new FormData();
     formData.append("title", title);
+    formData.append("description", description);
     formData.append("file", image);
     console.log(title, image);
     const result = await axios.post(
@@ -46,14 +47,12 @@ const BlogForm = () => {
         </div>
 
         <div>
-          <label className="block text-navy font-bold mb-2" htmlFor="title">
-            Blog
-          </label>
+          <label className="block text-navy font-bold mb-2">Blog</label>
           <input
             type="text"
-            id="title"
+            id="description"
             className="w-full p-2 border border-navy rounded"
-            value={title}
+            value={description}
             onChange={(e) => setdesc(e.target.value)}
             required
           />

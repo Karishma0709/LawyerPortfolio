@@ -1,24 +1,24 @@
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import './CardSection.css';
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import "./CardSection.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const CardSection = () => {
   useEffect(() => {
     gsap.fromTo(
-      '.card',
+      ".card",
       { opacity: 0, y: 100 },
       {
         opacity: 1,
         y: 0,
         duration: 1,
         stagger: 0.2,
-        ease: 'power2.out',
+        ease: "power2.out",
         scrollTrigger: {
-          trigger: '.card',
-          start: 'top 80%',
+          trigger: ".card",
+          start: "top 80%",
         },
       }
     );
@@ -86,12 +86,14 @@ const CardSection = () => {
                   className="absolute inset-0 bg-cover bg-center rounded-lg"
                   style={{ backgroundImage: `url(${card.image})` }}
                 ></div>
-                <div className="relative z-10 bg-opacity-40 bg-gray-800 text-white rounded-lg p-10 m-10">
+                <div className="relative z-10 bg-opacity-80 sm:bg-opacity-40 bg-gray-800 text-white rounded-lg sm:p-10 sm:m-10 m-0 p-6">
                   <h3 className="text-3xl text-yellow-500 font-semibold mb-4">
                     {card.title}
                   </h3>
-                  <p className="mb-4 text-justify text-2xl p-5">{card.description}</p>
-                  <p className="font-semibold text-2xl p-5 status sm:w-[50%]">
+                  <p className="text-justify text-1xl p-4">
+                    {card.description}
+                  </p>
+                  <p className="font-semibold sm:text-2xl  p-2 status sm:w-[50%]">
                     {card.stats}
                   </p>
                 </div>

@@ -23,7 +23,8 @@ const mongoose=require("mongoose")
 
 const blogSchema=new mongoose.Schema({
   pdf: String,
-  title:String
+  title:String,
+  description:String
 },{collection:"Bloginfo"})
 
 mongoose.model("Bloginfo",blogSchema)
