@@ -8,7 +8,7 @@ const AdminSidebar = () => {
         <ul>
           <li className="mb-4">
             <Link to="/contact-details" className="text-white text-lg hover:text-yellow-300">
-              Contact Detailsm
+              Contact Details
             </Link>
           </li>
           <li className="mb-4">

@@ -1,0 +1,94 @@
+
+.background-icon{
+background-image: url('./assets/About-img/circle_border.png');
+background-color: white;
+background-repeat: no-repeat;
+padding-top: 50px;
+padding-bottom: 40px;
+} 
+
+.small-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: orange;
+  font-family:"Pacifico", cursive;
+}
+
+.big-title{
+  font-size: 53px;
+  font-weight: 700;
+}
+
+
+
+.Group-img{
+width:450px;
+}
+
+
+.about-content{
+   width: 500px;
+height: 500px; 
+
+}
+
+.about-content-p{
+  text-align: start;
+  border-left: 3px solid orange;
+}
+
+.about-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  margin-top: 20px;
+  height: 200px;
+}
+.about-icons-div{
+  background-color: orange;
+  padding: 16px;
+  border-radius: 190px;
+  width: 63px;
+}
+
+.about-icons{
+  background-color: orange;
+  width: 27px;
+  padding: 0px;
+
+}
+
+.about-card-titel{
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.about-card-description{
+  opacity: 0.7;
+  font-size: 13px;
+  margin-left: 30px;
+}
+
+.readmore-btn{
+  margin-top: 25px;
+  margin-left: 8px;
+  background-color:white;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  width: 120px;
+}
+
+.readmore-btn:hover{
+  margin-top: 25px;
+  margin-left: 20px;
+  background-color:white;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: orange;
+  width: 120px;
+  text-decoration: underline orange;
+  transition: ease-out 0.3s;
+  transform: translateX(10px);
+}
