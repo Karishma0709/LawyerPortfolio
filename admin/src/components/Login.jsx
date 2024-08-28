@@ -29,31 +29,31 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md">
-        <h2 className="text-2xl font-bold mb-4">Admin Login</h2>
+      <form onSubmit={handleSubmit} className="bg-navy text-white p-6 rounded shadow-md max-w-sm w-full">
+        <h2 className="text-3xl font-bold mb-6 text-yellow-300">Admin Login</h2>
         <div className="mb-4">
-          <label className="block text-gray-700">Username</label>
+          <label className="block text-yellow-300">Username</label>
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-3 border border-yellow-500 rounded bg-navy text-white"
             required
           />
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700">Password</label>
+        <div className="mb-6">
+          <label className="block text-yellow-300">Password</label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-3 border border-yellow-500 rounded bg-navy text-white"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+          className="w-full bg-yellow-500 text-navy p-3 rounded hover:bg-yellow-400"
         >
           Login
         </button>
