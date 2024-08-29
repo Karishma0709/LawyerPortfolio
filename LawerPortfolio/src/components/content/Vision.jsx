@@ -55,7 +55,7 @@ const Vision = () => {
           We’re Here to Revolutionize the World of Legal Realm
         </h1>
         <div className="relative bg-white p-8 border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
-          <p className="vision-content sm:text-3xl  text-xl text-gray-700 leading-relaxed">
+          <p className="vision-content sm:text-2xl  text-xl text-gray-700 leading-relaxed">
             At Beacon, we are committed to delivering exceptional legal services
             with integrity, professionalism, and dedication. Our team of
             experienced and knowledgeable attorneys is here to provide you with
