@@ -2,7 +2,7 @@ const Contact = require("../model/contact")
 
 exports.createContact = async (req, res) => {
   try {
-    const { firstName, lastName, email, organization, message } = req.body;
+    const { firstName, lastName, email, organization, contactNumber, message } = req.body;
 
     // Create a new contact document
     const newContact = new Contact({
@@ -10,6 +10,7 @@ exports.createContact = async (req, res) => {
       lastName,
       email,
       organization,
+      contactNumber,
       message
     });
 

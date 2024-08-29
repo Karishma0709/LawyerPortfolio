@@ -25,6 +25,7 @@ const ContactDetails = () => {
               <th className="px-4 py-3 text-left">Last Name</th>
               <th className="px-4 py-3 text-left">Email</th>
               <th className="px-4 py-3 text-left">Organization</th>
+              <th className="px-4 py-3 text-left">Contact Number</th>
               <th className="px-4 py-3 text-left">Message</th>
               <th className="px-4 py-3 text-left">Date</th>
             </tr>
@@ -40,6 +41,7 @@ const ContactDetails = () => {
                 <td className="px-4 py-2">{contact.lastName}</td>
                 <td className="px-4 py-2">{contact.email}</td>
                 <td className="px-4 py-2">{contact.organization}</td>
+                <td className="px-4 py-2">{contact.contactNumber}</td>
                 <td className="px-4 py-2">{contact.message}</td>
                 <td className="px-4 py-2">{new Date(contact.createdAt).toLocaleString()}</td>
               </tr>
