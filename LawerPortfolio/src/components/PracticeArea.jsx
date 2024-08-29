@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "./PracticeArea.module.css"; // Ensure this path is correct
+import Breadcrumbs from "../components/content/Breadcrumbs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -84,8 +85,9 @@ const PracticeArea = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-100">
-      <div className="max-w-screen-lg mx-auto text-center">
+    <section className=" bg-gray-100">
+      <Breadcrumbs heading={"Practice Areas"} />
+      <div className="max-w-screen-lg mx-auto text-center pt-20">
         <h2 className="text-3xl font-bold text-yellow-500 mb-12">
           Practice Areas
         </h2>
