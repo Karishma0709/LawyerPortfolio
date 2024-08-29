@@ -1,10 +1,9 @@
 require('dotenv').config(); // Load environment variables from .env
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const path = require('path'); // Import the path module
-
+const path = require('path'); 
+const { router } = require('./routes/auth');
 const contactRoutes = require('./routes/contactRoutes');
 const blogRoutes = require('./routes/blogRoutes');
 
@@ -13,6 +12,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use('/api/auth', router);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use('/Blogfiles', express.static('Blogfiles'));
