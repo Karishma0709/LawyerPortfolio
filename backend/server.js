@@ -17,6 +17,12 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use('/Blogfiles', express.static('Blogfiles'));
 
+app.get('/', (req, res) => {
+  res.send('Server is running!');
+});
+
+
+
 // Routes
 app.use('/api', contactRoutes);
 app.use('/api', blogRoutes);
