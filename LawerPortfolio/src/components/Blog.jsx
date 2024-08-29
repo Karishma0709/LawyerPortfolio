@@ -8,7 +8,7 @@ const Blog = () => {
   }, []);
 
   const getPdf = async () => {
-    const result = await axios.get("http://localhost:5000/api/blogs");
+    const result = await axios.get("https://lawyerportfolio-backend.onrender.com/api/blogs");
     console.log(result.data.data);
     setAllImage(result.data.data);
   };
@@ -25,7 +25,7 @@ const Blog = () => {
                 className="flex sm:justify-between justify-items-center text-center items-center flex-col sm:flex-row border border-navy p-4 rounded"
               >
                 <img
-                  src={`http://localhost:5000/Blogfiles/${blog.pdf}`}
+                  src={`https://lawyerportfolio-backend.onrender.com/Blogfiles/${blog.pdf}`}
                   alt={blog.title}
                   className="mt-2 rounded sm:w-1/2 w-full sm:p-10"
                 />

@@ -5,7 +5,7 @@ const ContactDetails = () => {
 
   useEffect(() => {
     const fetchContacts = async () => {
-      const response = await fetch('http://localhost:5000/api/contacts');
+      const response = await fetch('https://lawyerportfolio-backend.onrender.com/api/contacts');
       const data = await response.json();
       setContacts(data);
     };
