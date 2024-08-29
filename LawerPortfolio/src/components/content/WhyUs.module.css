@@ -26,23 +26,37 @@
   color: #333; /* Darker color for readability */
 }
 
-.content {
+.pseudo_partial_border {
+  position: relative;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.4; /* Increased line height */
-  text-align: justify;
-  border-left: 4px solid #eab308;
-  border-right: 4px solid #eab308;
+  line-height: 1.4;
   padding-inline: 60px;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(5px);
   padding-block: 30px;
+  text-align: justify;
+  border: none;
+  text-align: center;
 }
 
-.bg_content {
-  background-image: url("../../assets/services4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.pseudo_partial_border::before,
+.pseudo_partial_border::after {
+  position: absolute;
+  width: 160px;
+  height: 120px;
+  content: "";
+}
+
+.pseudo_partial_border::before {
+  left: 0;
+  top: 0;
+  border-left: 7px solid #eab308;
+  border-top: 7px solid #eab308;
+}
+
+.pseudo_partial_border::after {
+  right: 0;
+  bottom: 0;
+  border-right: 7px solid #eab308;
+  border-bottom: 7px solid #eab308;
 }

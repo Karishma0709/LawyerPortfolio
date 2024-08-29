@@ -55,7 +55,7 @@ const WhyUs = () => {
   }, []);
 
   return (
-    <section className={`bg-gray-100 py-40 px-8 ${styles.section}`}>
+    <section className={`bg-gray-100 py-28 px-8 ${styles.section}`}>
       <div className="max-w-screen-lg mx-auto text-center">
         <h2
           className={`text-3xl font-bold text-yellow-500 mb-8 ${styles.title}`}
@@ -67,21 +67,19 @@ const WhyUs = () => {
         >
           A Different Approach
         </p>
-        <div className={styles.bg_content}>
-          <p
-            className={`text-xl md:text-2xl text-white leading-relaxed text-justify ${styles.content}`}
-          >
-            At our legal firm, we embrace a unique approach to tackle a diverse
-            array of cases, drawing upon the collective expertise of our
-            seasoned professionals. With years of experience in various legal
-            domains, our team employs innovative strategies tailored to each
-            case's intricacies. Whether it's civil disputes, criminal matters,
-            corporate law, or family affairs, we provide dynamic and effective
-            representation. Our commitment to excellence and client satisfaction
-            drives us to deliver optimal outcomes, ensuring our clients receive
-            top-notch legal support that surpasses expectations.
-          </p>
-        </div>
+        <p
+          className={`text-xl md:text-xl bg-gray-800 bg-opacity-80 text-white leading-relaxed text-justify ${styles.pseudo_partial_border}`}
+        >
+          At our legal firm, we embrace a unique approach to tackle a diverse
+          array of cases, drawing upon the collective expertise of our seasoned
+          professionals. With years of experience in various legal domains, our
+          team employs innovative strategies tailored to each case's
+          intricacies. Whether it's civil disputes, criminal matters, corporate
+          law, or family affairs, we provide dynamic and effective
+          representation. Our commitment to excellence and client satisfaction
+          drives us to deliver optimal outcomes, ensuring our clients receive
+          top-notch legal support that surpasses expectations.
+        </p>
       </div>
     </section>
   );
