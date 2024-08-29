@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'tailwindcss/tailwind.css';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Importing icons
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +48,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-navy text-white py-16 px-8">
+    <div className="bg-navy text-white py-16 lg:px-8 md:px-6 sm:px-4 px-3">
       <div className="container mx-auto">
         <h2 className="text-4xl font-extrabold text-center mb-10 text-white">
           Conta<span className="text-yellow-500">ct Us</span>
@@ -133,11 +134,11 @@ const ContactUs = () => {
           </div>
           {/* Contact Details and Map */}
           <div className="w-full md:w-1/2 p-4">
-            <div className="bg-white text-black p-6 rounded-lg shadow-md mb-4">
-              <h3 className="text-xl font-semibold mb-4 text-navy">Our Office</h3>
-              <p className="mb-2">123 Lawyer Street, City, Country</p>
-              <p className="mb-2">Phone: +123 456 789</p>
-              <p className="mb-2">Email: info@lawyerportfolio.com</p>
+            <div className="bg-white text-black text-left p-6 rounded-lg shadow-md mb-4">
+              <h3 className="text-2xl font-semibold mb-4 text-navy">Our Office</h3>
+              <p className="mb-2 flex items-center"><FaMapMarkerAlt className="mr-2 text-yellow-500" />123 Lawyer Street, City, Country</p>
+              <p className="mb-2 flex items-center"><FaPhoneAlt className="mr-2 text-yellow-500" />Phone: +123 456 789</p>
+              <p className="mb-2 flex items-center"><FaEnvelope className="mr-2 text-yellow-500" />Email: info@lawyerportfolio.com</p>
             </div>
             <div className="h-[385px]">
               <iframe
