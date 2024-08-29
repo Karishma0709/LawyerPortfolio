@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import styles from "./About.module.css"; // Ensure the path is correct
+import Breadcrumbs from "./Breadcrumbs";
+import bgabout from "../../assets/why.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,8 +42,9 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-16 px-6">
-      <div className="max-w-screen-lg mx-auto text-center">
+    <section className="bg-gray-100">
+      <Breadcrumbs bannerImage={bgabout} heading="About Us"></Breadcrumbs>
+      <div className="max-w-screen-lg mx-auto text-center pt-16">
         <h2
           className={`text-3xl font-bold text-yellow-500 mb-6 ${styles.title}`}
         >

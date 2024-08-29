@@ -68,7 +68,7 @@ const CardSection = () => {
     <div className="container ">
       <div className="flex justify-center flex-col w-[100%]">
         <h2 className="split-color-text mb-2 mt-3 text-3xl">Our Services</h2>
-        <p className="text-4xl font-bold text-white leading-relaxed mb-7 subtitle-bg mt-7">
+        <p className="text-3xl sm:text-4xl font-bold text-white mb-7 subtitle-bg sm:mt-7">
           Your All-in-One Legal Solution Provider
         </p>
       </div>
@@ -76,24 +76,18 @@ const CardSection = () => {
         {cardData.map((card) => (
           <li className="card" id={`card${card.id}`} key={card.id}>
             <div
-              className="card-body"
+              className="card-body mx-10 sm:mx-10 sm:my-20 my-4"
               style={{ background: card.bgimage, backgroundSize: "cover" }}
             >
-              <div className="main_card">
-                <div id="triangle-topleft "></div>
-
-                <div
-                  className="absolute inset-0 bg-cover bg-center rounded-lg"
-                  style={{ backgroundImage: `url(${card.image})` }}
-                ></div>
-                <div className="relative z-10 bg-opacity-80 sm:bg-opacity-40 bg-gray-800 text-white rounded-lg sm:p-10 sm:m-10 m-0 p-6">
+              <div className="relative z-10 bg-opacity-80 sm:bg-opacity-40 bg-gray-800 text-white rounded-lg sm:p-10 sm:m-10 m-0 p-6">
+                <div className="main_card">
                   <h3 className="text-3xl text-yellow-500 font-semibold mb-4">
                     {card.title}
                   </h3>
                   <p className="text-justify text-1xl p-4">
                     {card.description}
                   </p>
-                  <p className="font-semibold sm:text-2xl  p-2 status sm:w-[50%]">
+                  <p className="font-semibold p-2 status sm:w-[100%]">
                     {card.stats}
                   </p>
                 </div>

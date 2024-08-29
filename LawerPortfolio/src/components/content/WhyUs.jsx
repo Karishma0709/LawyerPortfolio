@@ -68,7 +68,7 @@ const WhyUs = () => {
           A Different Approach
         </p>
         <p
-          className={`text-xl md:text-xl bg-gray-800 bg-opacity-80 text-white leading-relaxed text-justify ${styles.pseudo_partial_border}`}
+          className={`text-xl md:text-xl bg-gray-800 bg-opacity-80 text-white leading-relaxed text-center sm:text-justify py-10 px-10 ${styles.pseudo_partial_border}`}
         >
           At our legal firm, we embrace a unique approach to tackle a diverse
           array of cases, drawing upon the collective expertise of our seasoned
