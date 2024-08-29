@@ -10,8 +10,7 @@ body {
     hsl(190deg, 30%, 15%) 50%,
     hsl(190deg, 30%, 15%) 100%
   );
-  font-family: "Playfair Display", serif
-  ;
+  font-family: "Playfair Display", serif;
   overflow-x: hidden;
 }
 
