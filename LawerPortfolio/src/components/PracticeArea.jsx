@@ -87,7 +87,7 @@ const PracticeArea = () => {
   return (
     <section className=" bg-gray-100">
       <Breadcrumbs heading={"Practice Areas"} />
-      <div className="max-w-screen-lg mx-auto text-center pt-20">
+      <div className="max-w-screen-lg mx-auto text-center py-20">
         <h2 className="text-3xl font-bold text-yellow-500 mb-12">
           Practice Areas
         </h2>
