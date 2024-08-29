@@ -69,8 +69,8 @@
   }
 
   .pseudo_partial_border {
-    padding-inline: 20px; /* Reduced padding */
-    padding-block: 20px; /* Reduced padding */
+    padding-inline: 25px; /* Reduced padding */
+    padding-block: 25px; /* Reduced padding */
   }
 
   .title {
