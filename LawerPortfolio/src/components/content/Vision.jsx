@@ -46,7 +46,7 @@ const Vision = () => {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-16 sm:py-30 px-8 sm:px-10 relative">
+    <section className="bg-gray-100 lg:h-[600px] md:h-[600px] sm:h-[800px] h-full py-16 sm:py-30 mb-10 px-8 sm:px-10 relative">
       <div className="max-w-screen-lg mx-auto text-center">
         <h3 className="vision-title text-3xl font-bold text-yellow-500 mb-8 transition-transform transform">
           Our Vision

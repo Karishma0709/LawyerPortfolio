@@ -59,3 +59,20 @@
   border-right: 7px solid #eab308;
   border-bottom: 7px solid #eab308;
 }
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3rem; /* Reduced padding */
+    padding-bottom: 3rem; /* Reduced padding */
+  }
+
+  .pseudo_partial_border {
+    padding-inline: 25px; /* Reduced padding */
+    padding-block: 25px; /* Reduced padding */
+  }
+
+  .title {
+    font-size: 2rem; /* Adjusted font size for small screens */
+  }
+}

@@ -15,7 +15,7 @@ const BlogForm = () => {
     formData.append("file", image);
     console.log(title, image);
     const result = await axios.post(
-      "http://localhost:5000/api/blogs",
+      "https://lawyerportfolio-backend.onrender.com/api/blogs",
       formData,
       {
         headers: { "Content-Type": "multipart/form-data" },

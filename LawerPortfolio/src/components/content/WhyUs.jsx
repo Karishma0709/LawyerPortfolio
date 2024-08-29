@@ -55,15 +55,15 @@ const WhyUs = () => {
   }, []);
 
   return (
-    <section className={`bg-gray-100 py-28 px-8 ${styles.section}`}>
+    <section className={`bg-white lg:py-28 md:py-20 sm:py-16 py-14 px-8 ${styles.section}`}>
       <div className="max-w-screen-lg mx-auto text-center">
         <h2
-          className={`text-3xl font-bold text-yellow-500 mb-8 ${styles.title}`}
+          className={`text-3xl font-bold text-yellow-500 mb-4 ${styles.title}`}
         >
           Why Beacon
         </h2>
         <p
-          className={`text-4xl md:text-5xl font-extrabold text-gray-800 mb-12 ${styles.header}`}
+          className={`text-4xl md:text-5xl font-extrabold text-gray-800 lg:mb-16 md:mb-14 sm:mb-12 mb-10 ${styles.header}`}
         >
           A Different Approach
         </p>
