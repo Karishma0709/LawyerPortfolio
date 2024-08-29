@@ -71,7 +71,7 @@ const AboutUs = () => {
             representation that ensures your best interests are always at the
             forefront.
           </p>
-          <p className="mb-8 text-justify">
+          <p className="text-justify">
             Whether you're dealing with a complex legal issue or seeking advice
             on a legal matter, our team is here to assist you every step of the
             way. With a track record of success and a commitment to excellence,
